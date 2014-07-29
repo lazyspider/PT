@@ -1,0 +1,132 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Competency Model</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/scojs.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <script type="text/javascript" src="js/sco.message.js"></script>
+    <!--<script type="text/javascript" src="js/sco.valid.js"></script>-->
+    <style>
+        body
+        {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #eee;
+        }
+
+        .form-signin
+        {
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+
+            .form-signin .form-signin-heading,
+            .form-signin .checkbox
+            {
+                margin-bottom: 10px;
+            }
+
+            .form-signin .checkbox
+            {
+                font-weight: normal;
+            }
+
+            .form-signin .form-control
+            {
+                position: relative;
+                height: auto;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 10px;
+                font-size: 16px;
+            }
+
+                .form-signin .form-control:focus
+                {
+                    z-index: 2;
+                }
+
+            .form-signin input[type="email"]
+            {
+                margin-bottom: -1px;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            .form-signin input[type="password"]
+            {
+                margin-bottom: 10px;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form class="form-signin" role="form">
+            <h2 class="form-signin-heading" style="text-align: center">Competency Model</h2>
+            <input type="text" class="form-control" placeholder="User name" required="" id="txtuser">
+            <!--autofocus=""-->
+            <input type="password" class="form-control" placeholder="Password" required="" style="margin-top: 5px;" id="txtpassword">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me">
+                    Remember me
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" id="btnOK">Sign in</button>
+        </form>
+        <!--  <a id="message_trigger_ok" href="#">Click to see the info message</a>
+        <a id="message_trigger_err" href="#">Click to see the error message</a>-->
+        <!--     <script>
+            $('#message_trigger_ok').on('click', function (e) {
+                e.preventDefault();
+                $.scojs_message('This is an info message', $.scojs_message.TYPE_OK);
+            });
+            $('#message_trigger_err').on('click', function (e) {
+                e.preventDefault();
+                $.scojs_message('This is an error message', $.scojs_message.TYPE_ERROR);
+            });
+        </script>-->
+    </div>
+    <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script>
+        $(function () {
+            $('#btnOK').on('click', function (e) {
+                if ($('#txtuser').val() == "super" && $('#txtpassword').val() == "super") {
+                    e.preventDefault();
+                    window.location.href = "main.html";
+                }
+                else {
+                    e.preventDefault();
+                    $.scojs_message('No user could be found, please try again.', $.scojs_message.TYPE_ERROR);
+                }
+
+            });
+        });
+
+    </script>
+</body>
+</html>

@@ -279,6 +279,7 @@
                                     <div id="sum16" data-sum="" data-factor="1"></div>
                                 </td>
                             </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -286,7 +287,7 @@
                 <div class="modal-footer">
                     <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
                     <button class="btn btn-primary" type="button" data-dismiss="modal">Save</button>
-                    <button class="btn btn-primary" type="button" data-dismiss="modal">Submit</button>
+                    <a class="btn btn-primary" type="button" id="btnSubmit" data-toggle="modal" href="#matchModal" data-backdrop="false">Submit</a>
                 </div>
             </div>
 
@@ -402,6 +403,25 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>-->
+                    <h4 style="cursor: default" class="modal-title" id="H1">Capability Matching Degree
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <h1 style="text-align: center;" class="bg-info">101%</h1>
+                </div>
+                <div class="modal-footer">
+                    <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
         $.fn.raty.defaults.path = 'img';
 
@@ -461,9 +481,11 @@
             }
 
             //$('#insGRA').click(function () {
-
             //    $('#myModal1').modal('show');
+            //});
 
+            //$('#btnSubmit').click(function () {
+            //$('#matchModal').modal('show');
             //});
 
         });
