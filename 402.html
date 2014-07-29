@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <style>
+        th
+        {
+            text-align: center;
+        }
+
+        tr
+        {
+            text-align: center;
+        }
+    </style>
+    <script></script>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-10 col-md-offset-1">
+
+
+                <div class="span4" style="margin-top: 30px; margin-bottom: 10px;">
+                    <ul class="nav nav-pills">
+                        <li class="dropdown active">
+                            <button role="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle big">Alex Yang &nbsp;<span class="caret"></span></button>
+                            <ul id="Ul1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                                    <span class="glyphicon glyphicon-user"></span>&nbsp;Alex Yang</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                                    <span class="glyphicon glyphicon-user"></span>&nbsp;Elvin Zhao</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                                    <span class="glyphicon glyphicon-user"></span>&nbsp;Lyon Wu</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                                    <span class="glyphicon glyphicon-user"></span>&nbsp;Clement Cai</a></li>
+                                <!--     <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-star"></span>&nbsp View Standard Grade</a></li>-->
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th style="width: 40%">Competency</th>
+                                <th style="width: 10%;">Useful</th>
+                                <th style="width: 10%;">Important</th>
+                                <th style="width: 10%;">Critical</th>
+                                <th style="width: 25%">Proficiency</th>
+                                <th style="width: 5%;">Sum</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>
+                                    <div data-toggle="modal" data-target="#myModal1" style="cursor: pointer">Get Results/Accountability</div>
+                                </td>
+                                <td class="success"></td>
+                                <td class="warning"></td>
+                                <td class="danger"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td>
+                                    <div id="star1"></div>
+                                </td>
+                                <td class="info">
+                                    <div id="sum1" data-sum="" data-factor="4"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Communication</td>
+                                <td class="success"></td>
+                                <td class="warning"></td>
+                                <td class="danger"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td>
+                                    <div id="star2"></div>
+                                </td>
+                                <td class="info">
+                                    <div id="sum2" data-sum="" data-factor="4"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Team work/Collaboration</td>
+                                <td class="success"></td>
+                                <td class="warning"></td>
+                                <td class="danger"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td>
+                                    <div id="star3"></div>
+                                </td>
+                                <td class="info">
+                                    <div id="sum3" data-sum="" data-factor="4"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Service Orientated</td>
+                                <td class="success"></td>
+                                <td class="warning"></td>
+                                <td class="danger"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td>
+                                    <div id="star4"></div>
+                                </td>
+                                <td class="info">
+                                    <div id="sum4" data-sum="" data-factor="4"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Creativity/Innovation</td>
+                                <td class="success"></td>
+                                <td class="warning"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star5"></div>
+                                </td>
+                                <td class="info">
+                                    <div id="sum5" data-sum="" data-factor="2"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Inspires/Motivates People & Provides Leadership</td>
+                                <td class="success"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="warning"></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star6"></div>
+                                </td>
+                                <td class="info">
+                                    <div id="sum6" data-sum="" data-factor="1"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Empowers People</td>
+                                <td class="success"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="warning"></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star7"></div>
+                                </td>
+                                <td class="info">
+                                    <div id="sum7" data-sum="" data-factor="1"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Shows Vision & Thinks Strategically</td>
+                                <td class="success"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="warning"></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star8"></div>
+                                </td>
+                                <td class="info">
+                                    <div id="sum8" data-sum="" data-factor="1"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Analyzes Issues</td>
+                                <td class="success"></td>
+                                <td class="warning"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star9"></div>
+                                </td>
+                                <td class="info">
+                                    <div id="sum9" data-sum="" data-factor="2"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Handles Challenges</td>
+                                <td class="success"></td>
+                                <td class="warning"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star10"></div>
+                                </td>
+                                <td class="info">
+                                    <div id="sum10" data-sum="" data-factor="2"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Job Knowledge</td>
+                                <td class="success"></td>
+                                <td class="warning"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star11"></div>
+                                </td>
+                                <td class="info">
+                                    <div id="sum11" data-sum="" data-factor="2"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Industry Awareness</td>
+                                <td class="success"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="warning"></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star12"></div>
+                                </td>
+                                <td class="info">
+                                    <div id="sum12" data-sum="" data-factor="1"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Quality Commitment</td>
+                                <td class="success"></td>
+                                <td class="warning"></td>
+                                <td class="danger"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td>
+                                    <div id="star13"></div>
+                                </td>
+                                <td class="info">
+                                    <div id="sum13" data-sum="" data-factor="4"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Design Capability</td>
+                                <td class="success"></td>
+                                <td class="warning"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star14"></div>
+                                </td>
+                                <td class="info">
+                                    <div id="sum14" data-sum="" data-factor="2"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Analytical Skills</td>
+                                <td class="success"></td>
+                                <td class="warning"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star15"></div>
+                                </td>
+                                <td class="info">
+                                    <div id="sum15" data-sum="" data-factor="2"></div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Technical Distinction</td>
+                                <td class="success"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="warning"></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star16"></div>
+                                </td>
+                                <td class="info">
+                                    <div id="sum16" data-sum="" data-factor="1"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 class="sub-header" style="text-align: right" id="scaledScore">Total Score : 0</h2>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" type="button" data-dismiss="modal">Save</button>
+                    <button class="btn btn-primary" type="button" data-dismiss="modal">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>-->
+                    <h4 style="cursor: default" class="modal-title" id="myModalLabel" data-toggle="tooltip" data-placement="bottom" title="Demonstrates concern for achieving or surpassing goals against an internal or external standard of excellence; very bottom-line oriented; steadfastly pushes self and others for results; shows a passion for improving the delivery of services with a commitment to continuous improvement.">Get Results/Accountability
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Entry
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body bg-primary">
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Is reliable to count on to achieve goals successfully.</h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Understands self role in teams and activities to achieve goals.</h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Can identify well established ways of accomplishing goals.</h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Delivers results within timeline with good quality.</h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Is accountable for own action.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Basic
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+
+                                <div class="panel-body bg-success">
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Has an understanding of and feels comfortable with stretching goal.</h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Holds self  to persist until personal and team goals are achieved and commitments met.</h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Can analyze and choose the best method to get things done with good result. </h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Seldom gives up before finishing, especially in the face of resistance or setbacks.</h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Willing to accept tough targets and strive for continuous improvement.</h4>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Intermediate
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body bg-info">
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Tries new things to reach challenging goals while also taking action to minimize the risks involved. </h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Holds self and other team members to persist until personal and team goals are achieved and commitments met.</h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Can describe key benefits, drawbacks and key requirements for achieving results. </h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Has in-depth knowledge of setting check points to measure progress to goals. </h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Pays attention to details, accuracy and thoroughness to achieve high quality standard.</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Advance
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse">
+
+                                <div class="panel-body bg-warning">
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Is bottom-line oriented and skilled in successfully managing resources to exceed goals. </h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Sets and maintains high performance standards for self and others that support organization’s strategic plan.</h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Has demonstrated commitment in pushing self and others for results. </h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Has experience in achieving priorities when working across boundaries. </h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Is effective in getting things done through others across functions and business.</h4>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Expert
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse">
+                                <div class="panel-body bg-danger">
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Has exceeded goals successfully in multiple and diverse environments and applications. </h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Is aggressive but realistic when setting the goals for individuals and the team.</h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Has produced results on wide or high-impact decisions and initiatives.</h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Motivates others to translate ideas into results. </h4>
+                                    <h4><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Is proven successful in turn- around situations where results were not being achieved.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                    <!--      <button type="button" class="btn btn-primary">Save changes</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $.fn.raty.defaults.path = 'img';
+
+        $(function () {
+            var total = 0;
+
+            $('#star1').raty();
+            $('#star2').raty();
+            $('#star3').raty();
+            $('#star4').raty();
+            $('#star5').raty();
+            $('#star6').raty();
+            $('#star7').raty();
+            $('#star8').raty();
+            $('#star9').raty();
+            $('#star10').raty();
+            $('#star11').raty();
+            $('#star12').raty();
+            $('#star13').raty();
+            $('#star14').raty();
+            $('#star15').raty();
+            $('#star16').raty();
+            //$('#div1').raty({ hints: ['a', null, '', undefined, '*_*'] });
+
+            function insertIntoDic(key, value) {
+                // If key is not initialized or some bad structure
+                if (!dictionary[key] || !(dictionary[key] instanceof Array)) {
+                    dictionary[key] = [];
+                }
+                // All arguments, exept first push as valuses to the dictonary
+                dictionary[key] = dictionary[key].concat(Array.prototype.slice.call(arguments, 1));
+                return dictionary;
+            }
+
+            $("div[id^='star']").raty({
+                click: function (score, evt) {
+                    var x = this.id;
+
+                    var finalscore = Number($('#sum' + x.replace("star", "")).data("factor")) * score;
+                    $('#sum' + x.replace("star", ""))[0].innerText = finalscore;
+                    $('#sum' + x.replace("star", "")).data("sum", finalscore);
+                    getSumValue();
+                }
+            });
+
+
+            function getSumValue() {
+                total = 0;
+                for (var i = 1; i < 17; i++) {
+                    var sum = $('#sum' + i.toString()).data("sum");
+                    if (sum != "") {
+                        total += Number(sum);
+                    }
+                }
+                $('#scaledScore')[0].innerText = 'Scaled Score : ' + total;
+
+            }
+
+            //$('#insGRA').click(function () {
+
+            //    $('#myModal1').modal('show');
+
+            //});
+
+        });
+
+
+    </script>
+</body>
+
+</html>

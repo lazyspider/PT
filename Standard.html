@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <style>
+        th {
+            text-align: center;
+        }
+
+        tr {
+            text-align: center;
+        }
+    </style>
+
+
+
+
+    <!--   <div class="modal-footer">
+        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+        <button class="btn btn-primary" type="button">Save changes</button>
+    </div>-->
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-10 col-md-offset-1">
+                <!--<h1 class="page-header">Dashboard</h1>-->
+                <div class="span4" style="margin-top: 30px; margin-bottom: 10px;">
+                    <ul class="nav nav-pills">
+                        <li class="dropdown active">
+                            <button role="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle big">Assistant Engineer &nbsp;<span class="caret"></span></button>
+                            <ul id="Ul1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                                    <span class="glyphicon glyphicon-file"></span>&nbsp;Lead Engineer</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                                    <span class="glyphicon glyphicon-file"></span>&nbsp;Supervisor</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                                    <span class="glyphicon glyphicon-file"></span>&nbsp;Senior Manger</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                                    <span class="glyphicon glyphicon-file"></span>&nbsp;Assitant Engineer</a></li>
+                                <!--     <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-star"></span>&nbsp View Standard Grade</a></li>-->
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--      <div class="row placeholders">
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzBEOEZEQiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojZmZmO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=">
+                        <h4>Label</h4>
+                        <span class="text-muted">Something else</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="200x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM5REJBQyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojMUUyOTJDO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=">
+                        <h4>Label</h4>
+                        <span class="text-muted">Something else</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="200x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzBEOEZEQiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojZmZmO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=">
+                        <h4>Label</h4>
+                        <span class="text-muted">Something else</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="200x200" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzM5REJBQyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjEwMCIgeT0iMTAwIiBzdHlsZT0iZmlsbDojMUUyOTJDO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MjAweDIwMDwvdGV4dD48L3N2Zz4=">
+                        <h4>Label</h4>
+                        <span class="text-muted">Something else</span>
+                    </div>
+                </div>-->
+
+                <!--<h2 class="sub-header">Section title</h2>
+                <div class="form-inline" style="margin-top: 10px;">
+                        <div class="form-group">
+                            <label>Compentency</label>
+                        </div>
+                          <div class="form-group">
+                            <label>importance</label>
+                        </div>
+             
+
+                </div>-->
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th style="width: 40%">Competency</th>
+                                <th style="width: 10%;">Useful</th>
+                                <th style="width: 10%;">Important</th>
+                                <th style="width: 10%;">Critical</th>
+                                <th style="width: 25%">Proficiency</th>
+                                <th style="width: 5%;">Sum</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Get Results/Accountability</td>
+                                <td class="success"></td>
+                                <td class="warning"></td>
+                                <td class="danger"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td>
+                                    <div id="star1"></div>
+                                </td>
+                                <td class="info">8</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Communication</td>
+                                <td class="success"></td>
+                                <td class="warning"></td>
+                                <td class="danger"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td>
+                                    <div id="star2"></div>
+                                </td>
+                                <td class="info">8</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Team work/Collaboration</td>
+                                <td class="success"></td>
+                                <td class="warning"></td>
+                                <td class="danger"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td>
+                                    <div id="star3"></div>
+                                </td>
+                                <td class="info">8</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Service Orientated</td>
+                                <td class="success"></td>
+                                <td class="warning"></td>
+                                <td class="danger"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td>
+                                    <div id="star4"></div>
+                                </td>
+                                <td class="info">4</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Creativity/Innovation</td>
+                                <td class="success"></td>
+                                <td class="warning"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star5"></div>
+                                </td>
+                                <td class="info">2</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Inspires/Motivates People & Provides Leadership</td>
+                                <td class="success"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="warning"></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star6"></div>
+                                </td>
+                                <td class="info">1</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Empowers People</td>
+                                <td class="success"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="warning"></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star7"></div>
+                                </td>
+                                <td class="info">1</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Shows Vision & Thinks Strategically</td>
+                                <td class="success"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="warning"></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star8"></div>
+                                </td>
+                                <td class="info">1</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Analyzes Issues</td>
+                                <td class="success"></td>
+                                <td class="warning"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star9"></div>
+                                </td>
+                                <td class="info">2</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Handles Challenges</td>
+                                <td class="success"></td>
+                                <td class="warning"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star10"></div>
+                                </td>
+                                <td class="info">2</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Job Knowledge</td>
+                                <td class="success"></td>
+                                <td class="warning"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star11"></div>
+                                </td>
+                                <td class="info">4</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Industry Awareness</td>
+                                <td class="success"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="warning"></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star12"></div>
+                                </td>
+                                <td class="info">1</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Quality Commitment</td>
+                                <td class="success"></td>
+                                <td class="warning"></td>
+                                <td class="danger"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td>
+                                    <div id="star13"></div>
+                                </td>
+                                <td class="info">8</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Design Capability</td>
+                                <td class="success"></td>
+                                <td class="warning"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star14"></div>
+                                </td>
+                                <td class="info">2</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Analytical Skills</td>
+                                <td class="success"></td>
+                                <td class="warning"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star15"></div>
+                                </td>
+                                <td class="info">2</td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="glyphicon glyphicon-hand-right"></span></td>
+                                <td>Technical Distinction</td>
+                                <td class="success"><span class="glyphicon glyphicon-ok"></span></td>
+                                <td class="warning"></td>
+                                <td class="danger"></td>
+                                <td>
+                                    <div id="star16"></div>
+                                </td>
+                                <td class="info">1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 class="sub-header" style="text-align: right">Scaled Score : 58</h2>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" type="button" data-dismiss="modal">Go to Appraisal</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        $.fn.raty.defaults.path = 'img';
+
+        $(function () {
+            $('#star1').raty({ readOnly: true, score: 2 });
+            $('#star2').raty({ readOnly: true, score: 2 });
+            $('#star3').raty({ readOnly: true, score: 2 });
+            $('#star4').raty({ readOnly: true, score: 1 });
+            $('#star5').raty({ readOnly: true, score: 1 });
+            $('#star6').raty({ readOnly: true, score: 1 });
+            $('#star7').raty({ readOnly: true, score: 1 });
+            $('#star8').raty({ readOnly: true, score: 1 });
+            $('#star9').raty({ readOnly: true, score: 1 });
+            $('#star10').raty({ readOnly: true, score: 1 });
+            $('#star11').raty({ readOnly: true, score: 2 });
+            $('#star12').raty({ readOnly: true, score: 1 });
+            $('#star13').raty({ readOnly: true, score: 2 });
+            $('#star14').raty({ readOnly: true, score: 1 });
+            $('#star15').raty({ readOnly: true, score: 1 });
+            $('#star16').raty({ readOnly: true, score: 1 });
+
+        });
+    </script>
+</body>
+
+</html>
